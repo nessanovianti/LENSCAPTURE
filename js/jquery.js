@@ -10,7 +10,6 @@ window.jQuery = window.$ = function(selector) {
 };
 
 document.addEventListener("DOMContentLoaded", function() {
-    // Logika Hamburger Menu (Layar HP)
     var toggleBtn = document.querySelector('.navbar-toggle');
     var menuCollapse = document.querySelector('#navbar-menu');
     if (toggleBtn && menuCollapse) {
@@ -23,12 +22,12 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // Logika Dropdown Jasa Foto (Bisa jalan di Laptop maupun HP)
+    // Dropdown Jasa Foto 
     var dropdownToggle = document.querySelector('.dropdown-toggle');
     var dropdownMenu = document.querySelector('.dropdown-menu');
     if (dropdownToggle && dropdownMenu) {
         dropdownToggle.addEventListener('click', function(e) {
-            e.preventDefault(); // Mencegah loncat halaman saat mengklik teks induk
+            e.preventDefault(); 
             if (dropdownMenu.style.display === 'block') {
                 dropdownMenu.style.display = 'none';
             } else {
@@ -36,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
 
-        // Menutup dropdown otomatis jika pengguna mengklik area luar menu
+
         document.addEventListener('click', function(e) {
             if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
                 dropdownMenu.style.display = 'none';

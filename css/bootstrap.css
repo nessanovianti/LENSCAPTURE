@@ -1,24 +1,15 @@
-/*
-Bootstrap v3.3.7 (http://getbootstrap.com)
-Copyright 2011-2016 Twitter, Inc.
-Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
-*/
-
-/* Core Reset Minimalis */
 html { font-family: sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-size: 10px; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-/* ============================================================
-   KUSTOM TEMA HITAM UNTUK GLOBAL BODY & TYPOGRAPHY (MATERI)
-   ============================================================ */
+/* KUSTOM TEMA HITAM UNTUK GLOBAL BODY & TYPOGRAPHY (MATERI)*/
 body {
     margin: 0;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
-    background-color: #111111 !important; /* Latar Belakang Hitam Pekat */
-    color: #ffffff !important;           /* Semua teks dasar otomatis putih */
+    background-color: #111111 !important; 
+    color: #ffffff !important;
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: inherit; font-weight: 500; line-height: 1.1; color: #ffffff !important;
@@ -26,26 +17,24 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 h1, .h1, h2, .h2, h3, .h3 { margin-top: 20px; margin-bottom: 10px; }
 p { margin: 0 0 10px; }
 
-/* Materi Kelas Tipografi .lead (Gambar Materi 2 & 4) */
+
 .lead { margin-bottom: 20px; font-size: 16px; font-weight: 300; line-height: 1.4; color: #cccccc !important; }
 @media (min-width: 768px) { .lead { font-size: 21px; } }
 
-/* Materi Kelas Perataan Teks (Gambar Materi 4) */
+
 .text-left { text-align: left; }
 .text-right { text-align: right; }
 .text-center { text-align: center; }
 .text-justify { text-align: justify; }
 
-/* Materi Kelas Warna / Penanda Teks (Gambar Materi 6) */
+
 .text-muted { color: #888888 !important; }
 .text-danger { color: #ff4d4d !important; font-weight: bold; }
 .text-success { color: #5cb85c !important; }
 .text-warning { color: #f0ad4e !important; }
 .text-info { color: #5bc0de !important; }
 
-/* ============================================================
-   GRID SYSTEM 12 KOLOM (MATERI HALAMAN 2)
-   ============================================================ */
+/* GRID SYSTEM 12 KOLOM (MATERI HALAMAN 2) */
 .container { padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto; }
 @media (min-width: 768px) { .container { width: 750px; } }
 @media (min-width: 992px) { .container { width: 970px; } }
@@ -57,18 +46,16 @@ p { margin: 0 0 10px; }
 
 .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 { float: left; position: relative; min-height: 1px; padding-right: 15px; padding-left: 15px; }
 .col-md-12 { width: 100%; }
-.col-md-6 { width: 50%; }  /* Untuk Kamera & Sewa HP (2 Kolom) */
-.col-md-4 { width: 33.33333333%; } /* Untuk Home, Layanan, & Anggota (3 Kolom) */
+.col-md-6 { width: 50%; } 
+.col-md-4 { width: 33.33333333%; } 
 
-/* Kelas Offset Grid untuk perataan tengah kartu (Halaman Tentang Kami & Form) */
+
 @media (min-width: 992px) {
     .col-md-offset-3 { margin-left: 25%; }
     .col-md-offset-2 { margin-left: 16.66666667%; }
 }
 
-/* ============================================================
-   KOMPONEN NAVIGASI GELAP (NAVBAR-INVERSE & STATIC-TOP)
-   ============================================================ */
+/* KOMPONEN NAVIGASI GELAP (NAVBAR-INVERSE & STATIC-TOP)*/
 .navbar { position: relative; min-height: 50px; margin-bottom: 20px; border: 1px solid transparent; }
 .navbar-header:before, .navbar-header:after { display: table; content: " "; }
 .navbar-header:after { clear: both; }
@@ -104,40 +91,33 @@ p { margin: 0 0 10px; }
 }
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover { color: #ffffff; background-color: #080808; }
 
-/* ============================================================
-   KOMPONEN KARTU UTAMA (.THUMBNAIL) TEMA GELAP
-   ============================================================ */
-/* ============================================================
-   KOMPONEN KARTU UTAMA (.THUMBNAIL) TEMA GELAP
-   ============================================================ */
-/* ============================================================
-   KOMPONEN KARTU UTAMA (.THUMBNAIL) TEMA GELAP & HOVER EFFECT
-   ============================================================ */
+/* KOMPONEN KARTU UTAMA (.THUMBNAIL) TEMA GELAP*/
+
 .thumbnail {
     display: block;
     padding: 4px;
     margin-bottom: 20px;
     line-height: 1.42857143;
-    background-color: #1a1a1a !important; /* Latar belakang abu gelap */
+    background-color: #1a1a1a !important;
     border: 1px solid #2d2d2d !important;
     border-radius: 4px;
     
-    /* MODIFIKASI: Menambahkan animasi transisi agar efek hover terasa halus */
+
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
-/* MODIFIKASI BARU: Efek interaktif saat kartu disorot kursor (Hover) */
+
 .thumbnail:hover {
-    border-color: #ff4d4d !important; /* Mengubah warna garis tepi menjadi merah */
-    -webkit-transform: translateY(-5px); /* Mengangkat kartu sedikit ke atas sejauh 5px */
+    border-color: #ff4d4d !important; 
+    -webkit-transform: translateY(-5px);
     -ms-transform: translateY(-5px);
     transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(255, 77, 77, 0.2); /* Memberikan efek bayangan glow merah tipis */
+    box-shadow: 0 8px 15px rgba(255, 77, 77, 0.2); 
 }
 
-/* Memaksa gambar profil lingkaran selalu berada di tengah kartu */
+
 .thumbnail img { 
     display: block !important;       
     margin-right: auto !important;   
@@ -149,17 +129,13 @@ p { margin: 0 0 10px; }
 }
 .thumbnail .caption { padding: 9px; color: #cccccc !important; }
 
-/* ============================================================
-   KOMPONEN TOMBOL RESPONSIF MATERI (.BTN, .BTN-DANGER, .BTN-BLOCK)
-   ============================================================ */
+/* KOMPONEN TOMBOL RESPONSIF MATERI (.BTN, .BTN-DANGER, .BTN-BLOCK)*/
 .btn { display: inline-block; padding: 6px 12px; margin-bottom: 0; font-size: 14px; font-weight: normal; line-height: 1.42857143; text-align: center; white-space: nowrap; vertical-align: middle; cursor: pointer; border: 1px solid transparent; border-radius: 4px; text-decoration: none; }
 .btn-danger { color: #fff; background-color: #d9534f; border-color: #d43f3a; }
 .btn-danger:hover { color: #fff; background-color: #c9302c; border-color: #ac2925; }
 .btn-block { display: block; width: 100%; }
 
-/* ============================================================
-   KOMPONEN PANEL & FORMULIR RESPONSIF (MATERI GAMBAR 8)
-   ============================================================ */
+/* KOMPONEN PANEL & FORMULIR RESPONSIF (MATERI GAMBAR 8) */
 .panel { margin-bottom: 20px; background-color: #1a1a1a; border: 1px solid #2d2d2d; border-radius: 4px; }
 .panel-heading { padding: 10px 15px; border-bottom: 1px solid #2d2d2d; border-top-left-radius: 3px; border-top-right-radius: 3px; background-color: #252525; color: #ffffff; }
 .panel-body { padding: 15px; }
@@ -173,12 +149,12 @@ label { display: inline-block; max-width: 100%; margin-bottom: 5px; font-weight:
 textarea.form-control { height: auto; }
 .help-block { display: block; margin-top: 5px; margin-bottom: 10px; color: #888888; font-size: 12px; }
 
-/* List Spesifikasi Tambahan */
+
 .specs-list, .service-features { list-style: none; padding: 0; margin: 15px 0; }
 .specs-list li, .service-features li { font-size: 13px; margin-bottom: 6px; padding-left: 20px; position: relative; color: #cccccc; text-align: left; }
 .specs-list li::before, .service-features li::before { content: "✓"; position: absolute; left: 0; color: #ff4d4d; font-weight: bold; }
 
-/* Pembungkus Peta Google Maps Responsif */
+
 .embed-responsive { position: relative; display: block; height: 0; padding: 0; overflow: hidden; }
 .embed-responsive-16by9 { padding-bottom: 56.25%; }
 .embed-responsive .embed-responsive-item, .embed-responsive iframe, .embed-responsive embed, .embed-responsive object, .embed-responsive video {
@@ -191,9 +167,7 @@ textarea.form-control { height: auto; }
     border: 0;
 }
 
-/* ============================================================
-   STRUKTUR DROPDOWN KUSTOM & HOVER MENU JASA FOTO
-   ============================================================ */
+/* STRUKTUR DROPDOWN KUSTOM & HOVER MENU JASA FOTO*/
 @media (min-width: 768px) {
     .dropdown-menu {
         position: absolute;
@@ -208,27 +182,27 @@ textarea.form-control { height: auto; }
         list-style: none;
         font-size: 14px;
         text-align: left;
-        background-color: #1a1a1a; /* Latar belakang kotak dropdown abu-abu gelap */
+        background-color: #1a1a1a;
         border: 1px solid #2d2d2d;
         border-radius: 4px;
         box-shadow: 0 6px 12px rgba(0,0,0,.175);
     }
     
-    /* Warna teks awal sub-menu diatur menjadi PUTIH */
+
     .dropdown-menu > li > a {
         display: block;
         padding: 8px 20px;
         clear: both;
         font-weight: normal;
         line-height: 1.42857143;
-        color: #ffffff !important; /* Mengubah teks pasif menjadi putih bersih */
+        color: #ffffff !important; 
         text-decoration: none;
     }
     
-    /* Efek HOVER sub-menu: Hanya merubah warna font menjadi MERAH tanpa kotak background */
+
     .dropdown-menu > li > a:hover,
     .dropdown-menu > li > a:focus {
-        color: #ff4d4d !important;             /* Font berubah merah saat disorot */
-        background-color: transparent !important; /* Latar belakang tetap transparan */
+        color: #ff4d4d !important;
+        background-color: transparent !important; 
     }
 }
